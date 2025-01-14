@@ -15,8 +15,8 @@ public class Barricade : NetworkBehaviour
         get;
         set;
     }
-    [SerializeField][Range(1, 20)] private float upTime;
-    [SerializeField][Range(1, 20)] private float downTime;
+    [SerializeField] [Range(1, 20)] private float upTime;
+    [SerializeField] [Range(1, 20)] private float downTime;
     [SerializeField] private float maxY = 1;
     [SerializeField] private float moveSpeed = 10;
     private float minY;
