@@ -3,15 +3,14 @@ using UnityEngine;
 
 public class Barricade : NetworkBehaviour
 {
+    [Networked] bool up { get; set; }
     [Networked] private TickTimer Timer { get; set; }
-
     [SerializeField][Range(1, 20)] float upTime;
     [SerializeField][Range(1, 20)] float downTime;
     [SerializeField] float maxY = 1;
     [SerializeField] float moveSpeed = 10;
 
     float minY;
-    [Networked] bool up { get; set; }
 
     public override void Spawned()
     {
